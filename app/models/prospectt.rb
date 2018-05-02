@@ -1,0 +1,2 @@
+class Prospectt < ApplicationRecord
+end

@@ -1,0 +1,29 @@
+
+
+<div class="column-form">
+  <%= simple_form_for(@prospectt) do |f| %>
+    <%= f.error_notification %>
+    <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+    <div class="form-inputs">
+      <div class="col-xs-6">
+        <%= f.input :first_name, label: 'Prénom' %>
+        <%= f.input :last_name, label: 'Nom' %>
+      </div>
+      <div class="col-xs-6">
+        <%= f.input :company, label: 'Entreprise' %>
+        <%= f.input :job_title, label: 'Poste' %>
+      </div>
+      <div class="col-xs-12">
+        <%= f.input :last_address, label: 'Adresse' %>
+        <%= f.input :mail, label: 'Adresse email' %>
+        <%= f.input :phone, label: 'Téléphone' %>
+      </div>
+
+    </div>
+
+    <div class="form-actions">
+      <center><%= f.submit "Envoyer" %></center>
+    </div>
+  <% end %>
+</div>
