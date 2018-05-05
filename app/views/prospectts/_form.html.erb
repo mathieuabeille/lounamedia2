@@ -1,29 +1,66 @@
-
-
-<div class="column-form">
-  <%= simple_form_for(@prospectt) do |f| %>
-    <%= f.error_notification %>
-    <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
-
-    <div class="form-inputs">
-      <div class="col-xs-6">
-        <%= f.input :first_name, label: 'Prénom' %>
-        <%= f.input :last_name, label: 'Nom' %>
-      </div>
-      <div class="col-xs-6">
-        <%= f.input :company, label: 'Entreprise' %>
-        <%= f.input :job_title, label: 'Poste' %>
-      </div>
-      <div class="col-xs-12">
-        <%= f.input :last_address, label: 'Adresse' %>
-        <%= f.input :mail, label: 'Adresse email' %>
-        <%= f.input :phone, label: 'Téléphone' %>
-      </div>
+<div style="min-height:100vh;
+background-image: url('https://images.unsplash.com/photo-1522827727117-7a793ab8af65?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b6ac76c56e3d15ae73b05f7b36e63751&auto=format&fit=crop&w=2500&q=80');">
+  <div class="logo">
+    <div class="col-xs-1">
+      <img src="https://image.flaticon.com/icons/svg/122/122441.svg" width="50px">
+    </div>
+    <div class="col-xs-11">
+      <h1>Louna Media</h1>
 
     </div>
+  </div>
 
-    <div class="form-actions">
-      <center><%= f.submit "Envoyer" %></center>
+
+  <div class="col-sm-8">
+    <div class="banner">
+    <div class="banner-content">
+      <h2>Nous facilitons le contact entre les marques et les femmes.</h2>
+      <p></p><p></p><p></p><p></p><p></p><p></p>
+      <div class="col-xs-4"><p><img src="https://image.flaticon.com/icons/svg/452/452757.svg" height="50px" alt=""></p><p>1 sur 3 se fait faire les ongles en salon</p></div>
+      <div class="col-xs-4"><p><img src="https://image.flaticon.com/icons/svg/523/523808.svg" height="50px" alt=""></p><p>340 000 avouent aimer le caca</p></div>
+      <div class="col-xs-4"><p><img src="https://image.flaticon.com/icons/svg/164/164530.svg"  height="50px" alt=""></p><p>100% s'ennuie à mourir avec la Vietkong</p></div>
     </div>
-  <% end %>
+  </div>
+  </div>
+
+
+
+
+  <div class="col-sm-4">
+    <div class="column-form">
+      <%= simple_form_for(@prospectt) do |f| %>
+        <%= f.error_notification %>
+        <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+        <div class="form-inputs">
+          <div class="col-xs-6">
+            <%= f.input :first_name, label: 'Prénom' %>
+            <%= f.input :company, label: 'Entreprise' %>
+
+          </div>
+          <div class="col-xs-6">
+            <%= f.input :last_name, label: 'Nom' %>
+            <%= f.input :job_title, label: 'Poste' %>
+          </div>
+          <div class="col-xs-12">
+            <%= f.input :mail, label: 'Adresse email' %>
+            <%= f.input :phone, label: 'Téléphone' %>
+          </div>
+
+        </div>
+
+        <div class="form-actions btn-treehouse">
+          <center><%= f.submit "Envoyer", class: "btn btn-primary" %></center>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="footer">
+  <div class="footer-links">
+    <a href="#">Cgv</a>
+  </div>
+  <div class="footer-copyright">
+    Copyright Louna Media Paris
+  </div>
+</div>
 </div>
