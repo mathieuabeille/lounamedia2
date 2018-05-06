@@ -28,7 +28,7 @@ class ProspecttsController < ApplicationController
 
     respond_to do |format|
       if @prospectt.save
-        format.html { redirect_to @prospectt, notice: 'Prospectt was successfully created.' }
+        format.html { redirect_to @prospectt }
         format.json { render :show, status: :created, location: @prospectt }
       else
         format.html { render :new }

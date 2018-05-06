@@ -1,34 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div style="min-height:100vh;
+background-image: url('https://images.unsplash.com/photo-1485796826113-174aa68fd81b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4d421bf13e03a04c6329be20362ea416&auto=format&fit=crop&w=1350&q=80');">
+  <div class="logo">
 
-<p>
-  <strong>First name:</strong>
-  <%= @prospectt.first_name %>
-</p>
+      <h1>Louna Media</h1>
 
-<p>
-  <strong>Last address:</strong>
-  <%= @prospectt.last_address %>
-</p>
 
-<p>
-  <strong>Mail:</strong>
-  <%= @prospectt.mail %>
-</p>
+  </div>
+  <br/>
 
-<p>
-  <strong>Company:</strong>
-  <%= @prospectt.company %>
-</p>
+<div style="width: 40vw; margin:auto;">
+  <div class="boxform column-form">
+    <h2>
+Merci <%= @prospectt.first_name %> !
+    </h2>
 
-<p>
-  <strong>Job title:</strong>
-  <%= @prospectt.job_title %>
-</p>
+  </div>
+</div>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @prospectt.phone %>
-</p>
-
-<%= link_to 'Edit', edit_prospectt_path(@prospectt) %> |
-<%= link_to 'Back', prospectts_path %>
