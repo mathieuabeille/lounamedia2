@@ -24,33 +24,36 @@ background-image: url('https://images.unsplash.com/photo-1485796826113-174aa68fd
 
 
   <div class="col-sm-4">
-    <div class="column-form">
-      <%= simple_form_for(@prospectt) do |f| %>
-        <%= f.error_notification %>
-        <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+    <div class="boxform">
+      <div class="column-form">
+        <%= simple_form_for(@prospectt) do |f| %>
+          <%= f.error_notification %>
+          <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-        <div class="form-inputs">
-          <div class="col-xs-6">
-            <%= f.input :first_name, label: 'Prénom' %>
-            <%= f.input :company, label: 'Entreprise' %>
+          <div class="form-inputs">
+            <div class="col-xs-6">
+              <%= f.input :first_name, label: 'Prénom' %>
+              <%= f.input :company, label: 'Entreprise' %>
+
+            </div>
+            <div class="col-xs-6">
+              <%= f.input :last_name, label: 'Nom' %>
+              <%= f.input :job_title, label: 'Poste' %>
+            </div>
+            <div class="col-xs-12">
+              <%= f.input :mail, label: 'Adresse email' %>
+              <%= f.input :phone, label: 'Téléphone' %>
+            </div>
 
           </div>
-          <div class="col-xs-6">
-            <%= f.input :last_name, label: 'Nom' %>
-            <%= f.input :job_title, label: 'Poste' %>
-          </div>
-          <div class="col-xs-12">
-            <%= f.input :mail, label: 'Adresse email' %>
-            <%= f.input :phone, label: 'Téléphone' %>
-          </div>
 
-        </div>
-
-        <div class="form-actions btn-treehouse">
-          <center><%= f.submit "Envoyer", class: "btn btn-primary" %></center>
-        </div>
-      <% end %>
+          <div class="form-actions btn-treehouse">
+            <center><%= f.submit "Envoyer", class: "btn btn-primary" %></center>
+          </div>
+        <% end %>
+      </div>
     </div>
+
   </div>
   <div class="footer">
   <div class="footer-links">

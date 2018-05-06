@@ -1,8 +1,16 @@
 
 
 // form
+.boxform{
+
+  border-radius: 1px;
+  background-color:rgba(72,72,72,0.4);
+}
+
 .column-form{
   // padding: 20px;
+
+
   font-weight: lighter;
   color: rgb(255, 255, 255);
   opacity: 1;
@@ -12,6 +20,7 @@
   align-items: center;
   justify-content: center;
     min-height: 77vh;
+
 
 }
 // partie gauche
@@ -43,15 +52,15 @@
 }
 
 .btn {
-  background-color: #FF6AA9;
-  border-color: #f4f4f4;
+  background-color: #F9A05A;
+  border-color: #F9A05A;
   opacity:0.8;
 }
 
 .btn:hover {
   opacity:1;
-  background-color: #FF6AA9;
-  border-color: #f4f4f4;
+  background-color: #F9A05A;
+  border-color: #F9A05A;
 }
 
 .logo{
@@ -91,7 +100,7 @@
   padding: 0px 10px;
 }
 .footer-links a:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 .footer .fa-heart {
   color: #D23333;
