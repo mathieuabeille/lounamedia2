@@ -18,12 +18,12 @@
     <tbody>
       <% @prospectts.each do |prospectt| %>
         <tr>
-          <td><%= prospectt.first_name %></td>
-          <td><%= prospectt.last_namerai %></td>
-          <td><%= prospectt.mail %></td>
-          <td><%= prospectt.company %></td>
-          <td><%= prospectt.job_title %></td>
-          <td><%= prospectt.phone %></td>
+          <td><% if prospectt.present? %><%= prospectt.first_name %> <% else %> <% end %></td>
+          <td><% if prospectt.present? %><%= prospectt.last_name %> <% else %> <% end %></td>
+          <td><% if prospectt.present? %><%= prospectt.mail %> <% else %> <% end %></td>
+          <td><% if prospectt.present? %><%= prospectt.company %> <% else %> <% end %></td>
+          <td><% if prospectt.present? %><%= prospectt.job_title %> <% else %> <% end %></td>
+          <td><% if prospectt.present? %><%= prospectt.phone %> <% else %> <% end %></td>
           <td><%= link_to 'Edit', edit_prospectt_path(prospectt) %></td>
           <td><%= link_to 'Destroy', prospectt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>

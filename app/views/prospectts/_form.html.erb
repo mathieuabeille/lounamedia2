@@ -32,17 +32,17 @@
 
           <div class="form-inputs" style="margin-top: 15px;">
             <div class="col-xs-6">
-              <%= f.input :first_name, label: 'Prénom' %>
-              <%= f.input :company, label: 'Entreprise' %>
+              <%= f.input :first_name, label: false,  placeholder: "Prénom",   required: true %>
+              <%= f.input :company, label: 'Entreprise',label: false,  placeholder: "Entreprise", required: true  %>
 
             </div>
             <div class="col-xs-6">
-              <%= f.input :last_name, label: 'Nom' %>
-              <%= f.input :job_title, label: 'Poste' %>
+              <%= f.input :last_name, label: 'Nom',label: false,  placeholder: "Nom",  required: true  %>
+              <%= f.input :job_title, label: 'Poste',label: false,  placeholder: 'Poste' , required: true %>
             </div>
             <div class="col-xs-12">
-              <%= f.input :mail, label: 'Adresse email' %>
-              <%= f.input :phone, label: 'Téléphone' %>
+              <%= f.input :mail, label: 'Adresse email',label: false, placeholder: 'Adresse' , required: true  %>
+              <%= f.input :phone, label: 'Téléphone',label: false, placeholder: 'Téléphone', required: true  %>
             </div>
 
           </div>
@@ -58,38 +58,38 @@
     </div>
 
 </div>
-  <div class="scroll">
-  <p>
+
+<div class="footer scroll">
+
     <a href="#usp">
     <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
   </a>
-  </p>
-  </div>
 
+  </div>
 </div>
 
 <center>
-<div class="container" data-reactid="121">
-  <div class="col-xs-12 text-xs-center" data-reactid="122">
-    <h3 class="text-thin" data-reactid="123">Pourquoi annoncer dans nos salons?</h3><br></br>
+<div class="container" >
+  <div class="col-xs-12 text-xs-center" >
+    <h3 class="text-thin" >Pourquoi annoncer dans nos salons?</h3><br></br>
   </div>
-  <div class="row" data-reactid="124">
-    <div class="col-xs-12" data-reactid="125">
-      <ul class="list-unstyled m-b-0 row justify-center justify-start-lg text-xs-center" data-reactid="126">
-        <li class="col-md-4" data-reactid="127">
-          <img src="<%= image_path 'television.png' %>" alt="Publicités pour femmes" style="width: 50px;" data-reactid="128">
-          <h4 data-reactid="129">Une mémorisation record</h4>
-          <p data-reactid="130">45 minutes de relaxation, sans distraction  propice à la mediation de votre message</p>
+  <div class="row" >
+    <div class="col-xs-12" >
+      <ul class="row justify-center justify-start-lg text-xs-center" >
+        <li class="col-md-4" style="list-style:none;" >
+          <img src="<%= image_path 'television.png' %>" alt="Publicités pour femmes" style="width: 50px;" >
+          <h4 >Une mémorisation record</h4>
+          <p >45 minutes de relaxation, sans distraction  propice à la mediation de votre message</p>
         </li>
-        <li class="col-md-4" data-reactid="131">
-          <img src="<%= image_path 'growth.png' %>" alt="Espace média rentable" style="width: 50px;" data-reactid="132">
-          <h4 data-reactid="133">Maximiser votre ROI</h4>
-          <p data-reactid="134">Un CPM attractif, zéro frais de mise en service et un suivi de vos performances en temps réel.</p>
+        <li class="col-md-4" style="list-style:none;">
+          <img src="<%= image_path 'growth.png' %>" alt="Espace média rentable" style="width: 50px;" d>
+          <h4 >Maximiser votre ROI</h4>
+          <p >Un CPM attractif, zéro frais de mise en service et un suivi de vos performances en temps réel.</p>
         </li>
-        <li class="col-md-4" data-reactid="135">
-          <img src="<%= image_path 'hand-shake.png' %>" alt="" style="width: 50px;" data-reactid="136">
-          <h4 data-reactid="137">Un partenaire à votre écoute</h4>
-          <p data-reactid="138">Plus qu'un simple fournisseur d'espace média, nous vous accompagnons dans l'integration dans notre réseau.</p>
+        <li class="col-md-4" style="list-style:none;" >
+          <img src="<%= image_path 'hand-shake.png' %>" alt="" style="width: 50px;" >
+          <h4 >Un partenaire à votre écoute</h4>
+          <p >Plus qu'un simple fournisseur d'espace média, nous vous accompagnons dans l'integration dans notre réseau.</p>
         </li>
       </ul>
     </div>
@@ -102,7 +102,7 @@
     <a href="#">Cgv</a>
   </div>
   <div class="footer-copyright">
-    Copyright Louna Media Paris
+    © 2018 Eva Media
   </div>
 </div>
 
